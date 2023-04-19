@@ -3,6 +3,10 @@
     {
       "id": "Select User",
       "isDefault": true
+    },
+    {
+      "id": "Register Personal Transaction",
+      "isDefault": false
     }
   ],
   "viewMode": false,
