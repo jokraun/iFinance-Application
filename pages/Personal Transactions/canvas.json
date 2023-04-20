@@ -1243,6 +1243,14 @@
               "timeoutInMillisecond": 10000
             },
             {
+              "id": "Personal Transactions_get_personal_mediums",
+              "name": "get_personal_mediums",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Personal Transactions_get_usernames",
               "name": "get_usernames",
               "confirmBeforeExecute": false,
@@ -1252,16 +1260,6 @@
             }
           ],
           [
-            {
-              "id": "Personal Transactions_get_personal_mediums",
-              "name": "get_personal_mediums",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "user_id.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "Personal Transactions_get_personal_trans",
               "name": "get_personal_trans",
