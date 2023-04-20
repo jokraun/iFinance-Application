@@ -7,6 +7,10 @@
     {
       "id": "Personal Transactions",
       "isDefault": false
+    },
+    {
+      "id": "Register Mediums",
+      "isDefault": false
     }
   ],
   "viewMode": false,

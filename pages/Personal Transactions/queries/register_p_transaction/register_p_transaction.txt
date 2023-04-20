@@ -1,1 +1,10 @@
-{{register_personal_transaction.data}}
+{
+	user_id: {{user_id.selectedOptionValue}},
+	register_personal_label: {{register_personal_label.text}},
+	amount: {{amount.value}},
+  deb_cred: {{debOrCred.selectedOptionValue}},
+  description: {{description.inputText}},
+  medium: {{medium.selectedOptionValue}},
+  category: {{category.selectedOptionValue}}
+	
+}

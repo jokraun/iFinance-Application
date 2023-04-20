@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/p/addPersonal/"
+        "url": "web:4000/p/addPersonal"
       },
       "invalids": [],
       "messages": [],
@@ -28,13 +28,8 @@
         }
       ],
       "encodeParamsToggle": true,
-      "queryParameters": [
-        {
-          "key": "userID",
-          "value": "{{user_id.selectedOptionValue}}"
-        }
-      ],
-      "body": "{{register_personal_transaction.data}}",
+      "queryParameters": [],
+      "body": "{\n\tuser_id: {{user_id.selectedOptionValue}},\n\tregister_personal_label: {{register_personal_label.text}},\n\tamount: {{amount.value}},\n  deb_cred: {{debOrCred.selectedOptionValue}},\n  description: {{description.inputText}},\n  medium: {{medium.selectedOptionValue}},\n  category: {{category.selectedOptionValue}}\n\t\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -53,9 +48,6 @@
         "key": "headers[0].value"
       },
       {
-        "key": "queryParameters[0].value"
-      },
-      {
         "key": "body"
       }
     ],
@@ -63,7 +55,12 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "register_personal_transaction.data",
+      "amount.value",
+      "category.selectedOptionValue",
+      "debOrCred.selectedOptionValue",
+      "description.inputText",
+      "medium.selectedOptionValue",
+      "register_personal_label.text",
       "user_id.selectedOptionValue"
     ],
     "userSetOnLoad": false,

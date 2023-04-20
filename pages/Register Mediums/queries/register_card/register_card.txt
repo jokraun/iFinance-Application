@@ -1,0 +1,7 @@
+{
+	label_ignor: {{label_ignor.text}},
+	user_id: {{user_id.selectedOptionValue}},
+	cardNum: {{cardNum.inputText}},
+	secCode: {{secCode.inputText}},
+	zip: {{zip.inputText}}
+}

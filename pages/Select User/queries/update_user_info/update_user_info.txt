@@ -1,0 +1,8 @@
+{
+	text: {{text.text}},
+	user_id: {{Select_User.selectedOptionValue}},
+	street: {{s.inputText}},
+	c: {{c.inputText}},
+	state: {{s.inputText}},
+	country: {{count.inputText}}
+}

@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "register_medium",
+    "name": "register_card",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/p/registerMedium"
+        "url": "web:4000/p/registerCard"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Personal Transactions",
+    "pageId": "Register Mediums",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\ttext1: {{text1.text}},\n\tuserID: {{userID.selectedOptionValue}},\n\tm_name: {{m_name.inputText}},\n\tcardNum: {{cardNum.inputText}}\n}",
+      "body": "{\n\tlabel_ignor: {{label_ignor.text}},\n\tuser_id: {{user_id.selectedOptionValue}},\n\tcardNum: {{cardNum.inputText}},\n\tsecCode: {{secCode.inputText}},\n\tzip: {{zip.inputText}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -53,16 +53,17 @@
     "messages": [],
     "jsonPathKeys": [
       "cardNum.inputText",
-      "m_name.inputText",
-      "text1.text",
-      "userID.selectedOptionValue"
+      "label_ignor.text",
+      "secCode.inputText",
+      "user_id.selectedOptionValue",
+      "zip.inputText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Personal Transactions_register_medium",
+  "id": "Register Mediums_register_card",
   "deleted": false,
-  "gitSyncId": "64405b7ee5eb213ac1f8c734_64407fe9e5eb213ac1f8c762"
+  "gitSyncId": "64405b7ee5eb213ac1f8c734_64413030c0e2b43ca2d18ede"
 }
