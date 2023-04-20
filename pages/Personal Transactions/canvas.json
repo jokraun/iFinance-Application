@@ -1214,7 +1214,7 @@
               "key": "003mev91u1",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 47,
+              "rightColumn": 62,
               "textSize": "0.875rem",
               "widgetId": "28sgk80if3",
               "minWidth": 450,
@@ -1251,23 +1251,19 @@
               "timeoutInMillisecond": 10000
             },
             {
+              "id": "Personal Transactions_get_personal_trans",
+              "name": "get_personal_trans",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Personal Transactions_get_usernames",
               "name": "get_usernames",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Personal Transactions_get_personal_trans",
-              "name": "get_personal_trans",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "user_id.selectedOptionValue"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
