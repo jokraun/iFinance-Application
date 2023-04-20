@@ -1,0 +1,6 @@
+{
+	text1: {{text1.text}},
+	userID: {{userID.selectedOptionValue}},
+	m_name: {{m_name.inputText}},
+	cardNum: {{cardNum.inputText}}
+}
